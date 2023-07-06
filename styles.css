@@ -30,13 +30,7 @@ h1 {
   text-align: justified;
   max-width: 50%;
 }
-#tribute-link {
-  text-decoration: none;
-  color: maroon;
-}
-a:hover {
-  text-decoration: underline;
-}
+
 
 footer {
   width:100%;
@@ -66,18 +60,37 @@ label {
   background-color:black;
   transition: 0.3s;
 } */
+
+.post1, .post2 {
+  display: none;
+}
+
+button {
+  color:#333;
+  background-color: inherit;
+  border: none;
+  font-weight: bold;
+  font-family: garamond;
+  font-size: 20px;
+}
+
+button:hover {
+  color: rgba(255,255,255,0.8);
+  background-color:#333;
+}
+
 div.post {
   margin-top: 10px;
   padding:5px;
 }
 
-div.post:hover {
+/* div.post:hover {
   /* width: 101%; */
-  color:rgba(255,255,255,0.8);
+  /* color:rgba(255,255,255,0.8);
   background-color:#333;
-  transition-duration: 0.2s;
+  transition-duration: 0.2s; */
   /* transition: ease-out; */
-}
+} */
 /* div.post:hover>label{
   font-size: 0.9rem;
   transition-duration: 0.05s;
@@ -87,12 +100,22 @@ div.post:hover {
 }
 
 
+a.tribute-link {
+  text-decoration: none;
+  color:maroon;
+}
+a:hover {
+  text-decoration: underline;
+}
 
 a.trivikram:hover, a.shubhang:hover {
 color: maroon;
 }
 
-
+button>span {
+  font-family: -apple-system, BlinkMacSystemFont,'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+}
 figcaption {
   text-align:center;
 }

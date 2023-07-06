@@ -1,1 +1,12 @@
-document.getElementById("posts").innerHTML = <div class="post"><label>05.07.2023| $_3V ^ kM$: </label> <md-block src="test1.md"></mdblock> </div> ;
+function myFunction(clicked_id) {
+  var elms = document.getElementsByClassName(clicked_id)
+
+  Array.from(elms).forEach((x) => {
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      x.style.transition = "0.4s";
+    } else {
+      x.style.display = "none";
+    }
+  })
+}
